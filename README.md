@@ -40,7 +40,7 @@ astro-skill/
 ```
 cd ~/Desktop/astro-skill
 git init && git add . && git commit -m "Астролог Ксении"
-gh repo create astro-ksenia --private --source=. --push
+gh repo create fates-of-xenia --private --source=. --push
 ```
 
 Репозиторий **обязательно приватный** — внутри её натальная карта и психологический
@@ -48,7 +48,7 @@ gh repo create astro-ksenia --private --source=. --push
 
 ### 2. Сделай токен для доступа
 GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token:
-- **Repository access:** Only select repositories → твой `astro-ksenia`
+- **Repository access:** Only select repositories → твой `fates-of-xenia`
 - **Permissions:** Contents → **Read-only**
 - Срок — на твоё усмотрение (можно длинный, токен read-only на один приватный репо).
 
@@ -59,7 +59,7 @@ GitHub → Settings → Developer settings → **Fine-grained tokens** → Gener
 В `install.sh` замени строку `REPO_URL` на:
 
 ```
-REPO_URL="https://<ТОКЕН>@github.com/rakhmondaler/astro-ksenia.git"
+REPO_URL="https://<ТОКЕН>@github.com/rakhmondaler/fates-of-xenia.git"
 ```
 
 (Если git заупрямится — используй форму `https://x-access-token:<ТОКЕН>@github.com/...`)

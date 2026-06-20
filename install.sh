@@ -11,7 +11,7 @@ set -euo pipefail
 #    4. Отправь ей install.command (Telegram/почта).
 # ============================================================
 
-REPO_URL="${ASTRO_REPO_URL:-https://<ТОКЕН>@github.com/rakhmondaler/astro-ksenia.git}"
+REPO_URL="${ASTRO_REPO_URL:-https://<ТОКЕН>@github.com/rakhmondaler/fates-of-xenia.git}"
 SKILL_NAME="astro"
 DEST="${ASTRO_DEST:-$HOME/.claude/skills/$SKILL_NAME}"
 
