@@ -12,7 +12,7 @@ set -euo pipefail
 # ============================================================
 
 REPO_URL="${ASTRO_REPO_URL:-https://<ТОКЕН>@github.com/rakhmondaler/fates-of-xenia.git}"
-SKILL_NAME="astro"
+SKILL_NAME="fates"
 DEST="${ASTRO_DEST:-$HOME/.claude/skills/$SKILL_NAME}"
 
 echo ""
