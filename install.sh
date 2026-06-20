@@ -45,7 +45,7 @@ fi
 echo "📂  Раскладываю файлы…"
 mkdir -p "$DEST"
 # чистим старое (кроме .venv), чтобы обновление было чистым
-find "$DEST" -mindepth 1 -maxdepth 1 ! -name '.venv' -exec rm -rf {} + 2>/dev/null || true
+find "$DEST" -mindepth 1 -maxdepth 1 ! -name '.venv' ! -name '.userdata' -exec rm -rf {} + 2>/dev/null || true
 cp "$TMP/repo/SKILL.md" "$DEST/"
 cp -R "$TMP/repo/data" "$DEST/"
 cp -R "$TMP/repo/scripts" "$DEST/"
