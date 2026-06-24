@@ -2,16 +2,13 @@
 set -euo pipefail
 
 # ============================================================
-#  Установка персонального астролога для Claude Code
-#
-#  ПЕРЕД ОТПРАВКОЙ КСЕНИИ (делает Далер, один раз):
-#    1. Впиши в REPO_URL ссылку с токеном (инструкция в README.md).
-#    2. Переименуй файл:  mv install.sh install.command
-#    3. Сделай исполняемым: chmod +x install.command
-#    4. Отправь ей install.command (Telegram/почта).
+#  Установка персонального астролога Ксении для Claude Code
+#  Репозиторий публичный — токен не нужен.
+#  Запуск: `bash install.sh`, двойной клик по install.command,
+#  либо в Claude Code: «склонируй этот репозиторий и запусти install.sh».
 # ============================================================
 
-REPO_URL="${ASTRO_REPO_URL:-https://<ТОКЕН>@github.com/rakhmondaler/fates-of-xenia.git}"
+REPO_URL="${ASTRO_REPO_URL:-https://github.com/rakhmondaler/fates-of-xenia.git}"
 SKILL_NAME="fates"
 DEST="${ASTRO_DEST:-$HOME/.claude/skills/$SKILL_NAME}"
 
